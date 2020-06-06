@@ -61,7 +61,12 @@ function createCard(data){
 
     var image = document.createElement("div")
     var img = document.createElement("img")
-    img.setAttribute("src", data.company_logo)
+    if(data.company_logo == null || data.company_logo == ""){
+        image.setAttribute("src", "https://www.logologo.com/logos/spinning-letter-s-logo.jpg" )
+    }
+    else{
+        img.setAttribute("src", data.company_logo)
+    }
     img.setAttribute("class", "img")
     image.append(img)
 
@@ -74,6 +79,7 @@ function createCard(data){
     loc.innerHTML = "Location : " + data.location
     var com = document.createElement("a")
     com.href = data.company_url
+    com.setAttribute("target", "_blank")
     com.innerText = "Click here for more info"
     div.append(title, name, loc, com)
 
