@@ -61,3 +61,12 @@ em{
 .float{
     float: left;
 }
+a{
+    text-decoration: none;
+    color: rgb(2, 2, 10);
+    font-weight: bold;
+}
+a:hover{
+    color: red;
+    font-size: larger;
+}

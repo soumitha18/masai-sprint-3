@@ -52,7 +52,7 @@ function createCard(data){
     title.textContent = "Title : " +  data.title
     var com = document.createElement("a")
     com.href = data.company_url
-    com.innerText = "Company Url"
+    com.innerText = "Click here for more info"
     div.append(title, name, com)
 
     cont.append(image, div)
