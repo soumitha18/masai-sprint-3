@@ -1,0 +1,58 @@
+body{
+    background-color: whitesmoke;
+}
+img{
+    width: 100%;
+}
+#jobs > *{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid grey;
+    background-color: white;
+    padding: 2%;
+    width: 50%;
+    margin-bottom: 3%;
+}
+#jobs > * > div:nth-child(1) {
+
+    width: 30%;
+    margin-right: 5%;
+}
+#layout{
+    margin-left: 25%;
+    margin-top: 3%;
+}
+.width{
+    width: 10%;
+    padding: 0.4%;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+#go{
+    padding: 0.5%;
+    width: 4%;
+    background-color: rgba(128, 128, 128, 0.26);
+    color: white;
+    border: 1px solid rgba(128, 128, 128, 0.253) ;
+    border-radius: 5px;
+}
+#back{
+    padding: 1%;
+    font-size: 150%;
+    color: white;
+    background-color: rgba(3, 3, 37, 0.89);
+}
+em{
+    font-weight: bold;
+    font-size: 150%;
+}
+#width{
+    margin-left: 2%;
+}
+#language{
+    width: 25%;
+    margin-left: 15%;
+}
+.float{
+    float: left;
+}
