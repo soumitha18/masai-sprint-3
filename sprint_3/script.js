@@ -1,3 +1,5 @@
+var job = document.getElementById("jobs")
+
 window.addEventListener("load", function(){
 
     var go = document.getElementById("go")
@@ -7,29 +9,33 @@ window.addEventListener("load", function(){
         var language = document.getElementById("language").value
         var location = document.getElementById("location").value
 
-        var xhr = new XMLHttpRequest()
-        var url = "https://jobs.github.com/positions.json?description="
-        xhr.open("GET", url + language + "&location=" + location)
-        xhr.send()
-        xhr.onload = function(){
-            console.log(JSON.parse(this.response))
-            var res = JSON.parse(this.response)
+        if(language == "" || location == ""){
+            alert("Please Enter all the Details!")
+        }
+        else{
+            var xhr = new XMLHttpRequest()
+            var url = "https://jobs.github.com/positions.json?description="
+            xhr.open("GET", url + language + "&location=" + location)
+            xhr.send()
+            xhr.onload = function(){
+                console.log(JSON.parse(this.response))
+                var res = JSON.parse(this.response)
 
-            if(res.length == 0){
-                alert("NO any Job in the respective URL!")
-            }
-            else{
-                for(i=0; i<res.length; i++){
-                    cont = createCard(res[i])
+                if(res.length == 0){
+                    alert("NO any Job in the respective URL!")
                 }
-            }
-        } 
+                else{
+                    job.innerHTML = ""
+                    for(i=0; i<res.length; i++){
+                        cont = createCard(res[i])
+                    }
+                }
+            } 
+        }
     })
 })
 
 function createCard(data){
-
-    var job = document.getElementById("jobs")
 
     var cont = document.createElement("div")
     cont.setAttribute("class", "float")

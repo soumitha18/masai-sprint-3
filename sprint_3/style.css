@@ -10,17 +10,22 @@ img{
     border: 1px solid grey;
     background-color: white;
     padding: 2%;
-    width: 50%;
+    width: 40%;
     margin-bottom: 3%;
+    height: 170px;
+}
+#jobs > div:nth-child(2n){
+    margin-left: 4%;
 }
 #jobs > * > div:nth-child(1) {
-
     width: 30%;
     margin-right: 5%;
 }
 #layout{
-    margin-left: 25%;
-    margin-top: 3%;
+    display: flex;
+    flex-direction: row;
+    margin : 3%;
+    margin-left: 10%;
 }
 .width{
     width: 10%;
