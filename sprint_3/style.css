@@ -1,7 +1,14 @@
+html{
+    width: 100%;
+}
 body{
     background-color: whitesmoke;
+    background-image: url(https://cdn.dribbble.com/users/8063/screenshots/873671/github_icon_vector_shape.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
-img{
+.img{
     width: 100%;
 }
 #jobs > *{
@@ -68,5 +75,5 @@ a{
 }
 a:hover{
     color: red;
-    font-size: larger;
+    font-size: 25px;
 }
