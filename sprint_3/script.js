@@ -39,21 +39,6 @@ window.addEventListener("load", function(){
     })
 })
 
-
-/*function createPagination(currPage, totalPage) {
-    var container = document.createElement('div')
-    for (var i = 1; i <= totalPage; i++) {
-        var a = document.createElement('a')
-        a.innerText = i
-        a.href = '?page=' + i
-        if (i == currPage) {
-            a.className = 'currPage'
-        }
-        container.appendChild(a)
-    }
-    return container
-}*/
-
 function createCard(data){
 
     var cont = document.createElement("div")
