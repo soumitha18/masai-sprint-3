@@ -88,6 +88,7 @@ window.addEventListener("load", function(){
             var loc = document.createElement("p")
             loc.innerHTML = "Location : " + data.location
             var com = document.createElement("a")
+            com.setAttribute("target", "_blank")
             com.href = data.company_url
             com.innerText = "Click here for more info"
             div.append(title, name, loc, com)
