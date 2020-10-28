@@ -1,6 +1,6 @@
 # masai-sprint-3
 
-<img src="sprint_3/resources/github.jpeg">
+<img src="resources/github.jpeg">
 
 My sprint_3 is GITHUB JOB SEARCHER. 
 Its an application that I have designed and implemented on the idea of API.  
